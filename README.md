@@ -1,13 +1,13 @@
 # Dark Travis-CI Theme
 
 [![Build
-Status](https://travis-ci.org/joshuacox/dark-travis-ci.svg?branch=master)](https://travis-ci.org/joshuacox/dark-travis-ci)
+Status](https://travis-ci.org/Thalhalla/Thalhalla-Github-Theme.svg?branch=master)](https://travis-ci.org/Thalhalla/Thalhalla-Github-Theme)
 
 
 ## Quickstart
 
 Merely go
-[here](https://userstyles.org/styles/141598)
+[here](https://userstyles.org/styles/141646/thalhalla-github)
 and install using stylish, if you want to create your own read on...
 
 ## Usage
@@ -15,10 +15,10 @@ and install using stylish, if you want to create your own read on...
 #### Manually
 
 ```
-sass travis-dark.scss travis-dark.css
+sass github-thalhalla.scss github-thalhalla.css
 ```
 
-Then copy the resulting travis-dark.css into stylish and associate with your
+Then copy the resulting github-thalhalla.css into stylish and associate with your
 selected slack domain.
 
 #### Makefile
@@ -27,9 +27,9 @@ selected slack domain.
 make
 ```
 
-Using the make method will automatically copy the resulting travis-dark.css to
+Using the make method will automatically copy the resulting github-thalhalla.css to
 your clipboard (assuming you are in X).  Then just paste into stylish
 
 #### Installation
 
-You can just copy the contents of travis-dark.css into a stylish document.
+You can just copy the contents of github-thalhalla.css into a stylish document.
