@@ -1,0 +1,2187 @@
+//
+// Set theme colors
+//
+
+$started: #edde3f;
+$passed: #39aa56;
+$failed: #db4545;
+
+$color: #6e6;
+$color2: #0f0;
+$color3: #3a3;
+$linkcolor: #a3f;
+$bgcolor: black;
+$bordercolor: #515;
+$bordercolor2: #616;
+$darkred: #df2e2e;
+$darkyellow: #00a4a4;
+$midgreen: #6cc643;
+
+$bgcolor1: #010001;
+$bgcolor2: #050505;
+$bgcolor3: #190919;
+
+$hover: #ddd;
+$darkcolor: #8a8;
+$shadow: #111;
+$greyd: #9d3d9d;
+$grey9: #c3c;
+$grey6: #717;
+$grey4: #414;
+$greyfill: #1e001e;
+$greyfill2: #1a001a;
+
+@-moz-document domain("render.githubusercontent.com"), domain("raw.githubusercontent.com"), regexp("^https?://((gist|guides|help|raw|status|developer).)?github.com((?!generated_pages/preview).)*$") {
+/* 
+ * GitHub Dark v2.6.0
+ * Copyright 2016 Quan You.
+ * GitHub Project (https://cquanu.github.io/github-dark/)
+ * Licensed under MIT (https://github.com/cquanu/github-dark/blob/master/LICENSE)
+*/
+
+
+/* HTML Global */
+
+body {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+p {
+    color: $color2 !important;
+}
+
+h4 {
+    color: $color;
+}
+
+
+/* Class Global */
+
+.lead {
+    color: $greyd;
+}
+
+
+/* Main Site and New User */
+
+.site-header {
+    background-color: $bgcolor2;
+}
+
+.site-header-nav .nav-item {
+    color: $color;
+}
+
+.jumbotron-home {
+    background-image: none;
+    background-color: $bgcolor;
+}
+
+.features-list .list-divider,
+.setup-form .tos-info,
+.setup-form .setup-organization-next {
+    border-color: $bordercolor;
+}
+
+.radio-label {
+    border-color: $bordercolor;
+}
+
+.tag-input-tag {
+    background: $bgcolor2;
+}
+
+.tag-input-tag .remove {
+    background: $bgcolor;
+}
+
+.home-hero-signup .form-control-lg {
+    border-color: $bordercolor;
+}
+
+.shade-gray {
+    background-color: $greyfill !important;
+}
+
+.tile-block {
+    border-color: $bordercolor;
+}
+
+.tile-bordered:not(:last-child) {
+    border-color: $bordercolor;
+}
+
+
+/* Main Site Login */
+
+.session-authentication {
+    background-color: $bgcolor;
+}
+
+.session-authentication .header-logo {
+    color: $color;
+}
+
+.session-authentication .auth-form-body {
+    border-color: $bordercolor;
+}
+
+.auth-form-body {
+    background-color: $bgcolor;
+}
+
+.session-authentication .create-account-callout {
+    border-color: $bordercolor;
+}
+
+.session-authentication .auth-form-header {
+    color: $color;
+}
+
+
+/* Site Wide Global */
+
+.header {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.header-logo-invertocat {
+    color: $color;
+}
+
+.header-search-scope {
+    border-color: $bordercolor;
+}
+
+.header-nav-link {
+    color: $color;
+}
+
+
+/*.scoped-search .form-control .header-search-scope {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}*/
+
+.form-control,
+.form-select {
+    color: $color;
+    background-color: $greyfill2;
+    border-color: $bordercolor;
+}
+
+.form-control.focus,
+.form-control:focus,
+.form-select.focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
+.form-group .form-control:focus {
+    background-color: $greyfill2;
+}
+
+.btn {
+    color: $color;
+    background-color: $bgcolor;
+    background-image: none;
+    border-color: $bordercolor;
+}
+
+.btn:hover,
+.btn:active,
+.btn.zeroclipboard-is-hover,
+.btn.zeroclipboard-is-active {
+    text-decoration: none;
+    background-color: $greyfill2;
+    background-image: none;
+    border-color: $bordercolor;
+}
+
+.btn:active,
+.btn.selected,
+.btn.zeroclipboard-is-active {
+    background-color: $bgcolor;
+    background-image: none;
+    border-color: $bordercolor;
+}
+
+.btn-primary {
+    color: $color;
+    background-color: $bgcolor3;
+    background-image: none;
+    border-color: $bgcolor3;
+}
+
+.btn-theme-green {
+    background-color: $midgreen;
+}
+
+.site-footer {
+    border-color: $bordercolor;
+}
+
+.dropdown-menu {
+    background-color: $bgcolor;
+    border: 1px solid $bordercolor;
+    box-shadow: none;
+}
+
+.dropdown-divider {
+    background-color: $bordercolor;
+}
+
+.dropdown-item {
+    color: $greyd;
+}
+
+.dropdown-item:hover {
+    background-color: $bgcolor2;
+}
+
+button.dropdown-item.dropdown-signout {
+    color: $darkred;
+}
+
+
+/* Site Related */
+
+.setup-header {
+    border-color: $bordercolor;
+}
+
+
+/* Home */
+
+.news .alert {
+    border-color: $bordercolor;
+}
+
+.news .alert .octicon {
+    color: $color3;
+}
+
+.news .alert .branch-link,
+.news .alert .pull-info {
+    color: $greyfill2;
+    background: $bgcolor2;
+}
+
+.ajax-pagination-form .ajax-pagination-d {
+    background: $bgcolor3;
+}
+
+.boxed-group>h3,
+.boxed-group .heading {
+    color: $color;
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.boxed-group-inner {
+    background: $bgcolor;
+    border: 1px solid $bordercolor;
+}
+
+.mini-repo-list-item {
+    border-color: $bordercolor;
+}
+
+.mini-repo-list-item .repo-icon {
+    color: $color3;
+}
+
+.private .mini-repo-list-item {
+    background-color: $bgcolor2;
+}
+
+.private .mini-repo-list-item .repo-icon {
+    color: $color2;
+}
+
+.filter-bar {
+    background-color: $bgcolor;
+    border-bottom: 1px solid $bordercolor;
+}
+
+.boxed-group .counter {
+    color: $color;
+    background-color: $bgcolor;
+    border: 1px $bordercolor solid;
+}
+
+.subscribe-feed {
+    color: $darkcolor;
+}
+
+.protip-callout {
+    border-color: $bordercolor;
+}
+
+.octofication .broadcast-icon-mask {
+    background-color: $bgcolor;
+}
+
+.link-gray-dark {
+    color: $darkyellow !important;
+}
+
+.more-repos {
+    text-align: center;
+    background-color: $bgcolor2;
+    box-shadow: none;
+    border-top: 1px solid $bordercolor;
+}
+
+
+/* New Repo */
+
+.outline-box-highlighted {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.outline-box {
+    border: solid 1px $bordercolor;
+}
+
+.copyable-terminal {
+    background-color: $greyfill2;
+}
+
+.reponame-suggestion {
+    color: $darkcolor;
+}
+
+
+/* Repo Page (Main) */
+
+.repohead.experiment-repo-nav {
+    background-color: $greyfill2;
+}
+
+.pagehead {
+    border-color: $bordercolor;
+}
+
+.repository-meta {
+    color: $greyd;
+}
+
+.social-count {
+    color: $color2;
+    background-color: $greyfill2;
+    border: 1px solid $bordercolor;
+    border-left: 0;
+}
+
+.user-mention,
+.team-mention {
+    color: $darkyellow;
+}
+
+.reponav-item {
+    color: $greyd;
+}
+
+.reponav-item:hover,
+.reponav-item:focus {
+    color: $color;
+}
+
+.counter {
+    background-color: $greyfill2;
+    border: 1px $bordercolor solid;
+}
+
+.reponav-item .counter {
+    color: $color;
+}
+
+.reponav-item.selected {
+    color: $color;
+    background-color: $bgcolor;
+    border-color: $bordercolor $bordercolor transparent;
+}
+
+.btn.selected:hover {
+    background-color: $greyfill2;
+}
+
+.overall-summary {
+    border-color: $bordercolor;
+}
+
+.text-emphasized {
+    color: $color;
+}
+
+.numbers-summary a,
+.numbers-summary .nolink {
+    color: $darkcolor;
+}
+
+.repository-lang-stats-graph {
+    border-color: $bordercolor;
+}
+
+.repository-lang-stats ol.repository-lang-stats-numbers li .language-color {
+    border: 1px $bordercolor solid;
+}
+
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang {
+    color: $color;
+}
+
+table.files {
+    background: $bgcolor;
+}
+
+table.files tr.navigation-focus td {
+    background: $greyfill2;
+}
+
+table.files td {
+    border-color: $bordercolor;
+}
+
+table.files td.icon {
+    color: $color;
+}
+
+.warning {
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    font-weight: bold;
+    background-color: $bordercolor;
+}
+
+.file-wrap {
+    border-color: $bordercolor;
+}
+
+.commit-author-section {
+    color: $color;
+}
+
+.commit-tease {
+    color: $darkcolor;
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.commits-list-item .commit-author {
+    color: $darkyellow;
+}
+
+.commit-tease-sha {
+    color: $darkyellow;
+}
+
+.commit-tease-contributors {
+    background-color: $greyfill2;
+    border-color: $bordercolor;
+}
+
+.commit .commit-title a {
+    color: $darkyellow;
+}
+
+.branch-infobar {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.full-commit {
+    background: $bgcolor;
+    border: 1px solid $bordercolor;
+}
+
+.full-commit p.commit-title {
+    color: $darkyellow;
+}
+
+.full-commit .commit-meta {
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.full-commit .sha-block {
+    color: $color;
+}
+
+.full-commit .sha-block>.sha {
+    color: $greyd;
+}
+
+.full-commit .btn-outline,
+.full-commit .btn-outline:disabled {
+    border-color: $bordercolor;
+}
+
+.commits-list-item.navigation-focus {
+    background: $greyfill2;
+}
+
+.file-navigation .get-repo-btn {
+    border-color: $bordercolor;
+}
+
+.file-navigation .get-repo-btn:first-child {
+    border-color: $bordercolor;
+}
+
+.signed-commit-badge {
+    border-color: $bordercolor;
+}
+
+.signed-commit-signer-name .signer {
+    display: block;
+    font-weight: bold;
+    color: $darkyellow;
+}
+
+.flex-table-item-primary {
+    color: $color;
+}
+
+span.d-block {
+    color: $color;
+}
+
+.signed-commit-header {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+
+/* Repo Blame */
+
+.blame-commit-title,
+.blame-commit-title .message {
+    color: $darkyellow;
+}
+
+.blame-commit,
+.blame-commit+.blame-line {
+    border-color: $bordercolor;
+}
+
+.blame-blob-num {
+    background-color: $bgcolor2;
+}
+
+.muted-link {
+    color: $darkyellow !important;
+}
+
+
+/* README Markdown Live */
+
+.readme .markdown-body,
+.readme .plain {
+    background-color: $greyfill2;
+    border-color: $bordercolor;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+    background-color: $bgcolor;
+    border: 1px $bordercolor solid;
+}
+
+.markdown-body h1 {
+    border-color: $bordercolor;
+}
+
+.markdown-body img {
+    background-color: $greyfill2;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+    color: $color;
+}
+
+.markdown-body table tr {
+    background-color: $bgcolor;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+    border-color: $bordercolor;
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: $bgcolor2;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+    color: $darkcolor;
+}
+
+.markdown-body code,
+.markdown-body tt {
+    color: $greyfill2;
+    background-color: $bgcolor2;
+}
+
+.blob-num {
+    color: $darkcolor;
+    border-color: $bordercolor;
+}
+
+.blob-code-inner {
+    color: $darkcolor;
+}
+
+.blob-code-hunk,
+.blob-code-expandable {
+    background-color: $bgcolor2;
+}
+
+.blob-num-hunk,
+.blob-num-expandable {
+    background-color: $bgcolor2;
+}
+
+.blob-num-expandable {
+    background-color: $bgcolor2;
+}
+
+.ace_editor .ace_gutter-active-line {
+    background-color: $bgcolor2;
+}
+
+.ace_editor .ace_marker-layer .ace_active-line {
+    background-color: $bgcolor2;
+}
+
+
+/* Code syntax Highlighting */
+
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+    color: $darkyellow;
+}
+
+.pl-s .pl-s1,
+.pl-smi {
+    color: $color;
+}
+
+.pl-k {
+    color: $darkred;
+}
+
+.ace_string {
+    color: $darkcolor;
+}
+
+.ace_support.ace_type {
+    color: $darkred;
+}
+
+.ace_keyword {
+    color: $darkcolor;
+}
+
+.ace_variable {
+    color: $bordercolor;
+}
+
+.ace_focus {
+    background-color: $bgcolor;
+}
+
+.ace_markup.ace_heading {
+    color: $darkcolor;
+}
+
+
+/* Markdown Standalone */
+
+.markdown-body h2 {
+    border-color: $bordercolor;
+}
+
+.markdown-body hr {
+    background-color: $bordercolor;
+}
+
+.markdown-body blockquote {
+    border-color: $bordercolor;
+}
+
+
+/* Repo Code Tab Live | Markdown */
+
+.file {
+    border-color: $bordercolor;
+}
+
+.file-header {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.breadcrumb strong.final-path {
+    color: $greyd;
+}
+
+.ace_gutter {
+    background: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.ace-github-light {
+    color: $greyd;
+    background-color: $bgcolor;
+}
+
+.file-commit-form .commit-form {
+    border-color: $bordercolor;
+}
+
+.commit-sha {
+    background-color: inherit;
+    border-color: $bordercolor;
+}
+
+
+/* Repo | Issues Tab */
+
+.table-list-header {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.Box-body-row--highlight .Box-row-link {
+    color: $darkyellow;
+}
+
+.Box-body-row {
+    border-top: 1px solid $bordercolor;
+}
+
+.Box-body-row--highlight.navigation-focus,
+.Box-body-row--highlight:hover {
+    background-color: $greyfill2;
+}
+
+.issues-listing .table-list-issues .navigation-focus {
+    background-color: $bgcolor;
+}
+
+.table-list {
+    border-color: $bordercolor;
+}
+
+.table-list-cell {
+    border-top-color: $bordercolor;
+}
+
+.table-list-bordered .table-list-cell:first-child {
+    border-left-color: $bordercolor;
+}
+
+.table-list-bordered .table-list-cell:last-child {
+    border-right-color: $bordercolor;
+}
+
+.table-list-header-toggle .btn-link {
+    color: $greyd;
+}
+
+.table-list-header-toggle .btn-link:hover {
+    color: $color;
+}
+
+.table-list-header-toggle .btn-link.selected,
+.table-list-header-toggle .btn-link.selected:hover {
+    color: $color;
+}
+
+.issue-title-link {
+    color: $darkyellow;
+}
+
+.protip {
+    color: $darkcolor;
+}
+
+.milestone-title-link a {
+    color: $color;
+}
+
+.Box-body {
+    border-color: $bordercolor;
+}
+
+
+/* Dropdown Menu */
+
+.select-menu-modal {
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+.select-menu-header {
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.select-menu-header .select-menu-title {
+    color: $greyd;
+    text-shadow: none;
+}
+
+.select-menu-header {
+    background: $bgcolor2;
+    border-bottom: 1px solid $bordercolor;
+}
+
+.select-menu-item {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.select-menu-item.selected {
+    color: $color;
+}
+
+.select-menu-filters {
+    background-color: $bgcolor;
+}
+
+.select-menu-text-filter:first-child:last-child {
+    border-color: $bordercolor;
+}
+
+.select-menu-text-filter input {
+    border-color: $bordercolor;
+}
+
+
+/* Repo | Pull Request Tab */
+
+.border-left,
+.border-right,
+.border-bottom {
+    border-color: $bordercolor !important;
+}
+
+.pr-toolbar.is-stuck::after {
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+
+/* Repo Issues & Pull Request Convo */
+
+.gh-header-edit .edit-issue-title,
+.gh-header-edit .edit-issue-title:focus {
+    background-color: $greyfill2;
+}
+
+.gh-header-meta {
+    border-color: $bordercolor;
+}
+
+.gh-header-meta .author {
+    color: $darkyellow;
+}
+
+.commit-ref {
+    color: $greyfill2;
+    background-color: $bgcolor2;
+}
+
+.commit-ref .user {
+    color: $greyfill2;
+}
+
+.tabnav-tab.selected {
+    background-color: $bgcolor;
+}
+
+.tabnav-pr .tabnav-tab.selected {
+    color: $color;
+    border-color: $bordercolor;
+}
+
+.tabnav-pr {
+    border-color: $bordercolor;
+}
+
+.timeline-comment-wrapper {
+    border: 0;
+}
+
+.timeline-comment-header {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.timeline-comment-header .author {
+    color: $darkyellow;
+}
+
+.timeline-comment {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.timeline-comment-wrapper>.timeline-comment::before,
+.timeline-new-comment .timeline-comment::before {
+    border-right-color: $bordercolor;
+}
+
+timeline-comment::before {
+    border-right-color: $bgcolor2 !important;
+}
+
+.timeline-comment::after {
+    border-right-color: $bgcolor2 !important;
+}
+
+.timeline-comment.current-user .timeline-comment-header {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.timeline-comment.current-user {
+    border-color: $bordercolor;
+}
+
+.timeline-comment.current-user .timeline-comment-label {
+    border-color: $bordercolor;
+}
+
+.timeline-comment-wrapper .timeline-comment.current-user::before {
+    border-width: 8px;
+    border-right-color: $bordercolor;
+}
+
+.timeline-comment-label {
+    border-color: $bordercolor;
+}
+
+.comment-reactions.has-reactions {
+    border-color: $bordercolor;
+}
+
+.reaction-summary-item {
+    border-color: $bordercolor;
+}
+
+.timeline-commits .commit-message>code a {
+    color: $darkcolor;
+}
+
+.discussion-timeline::before {
+    width: 1px;
+    background-color: $bordercolor;
+}
+
+.discussion-timeline-actions {
+    background-color: $bgcolor;
+    border: 0;
+}
+
+.discussion-item-ref-title .title-link {
+    color: $darkcolor;
+}
+
+.discussion-item-entity {
+    color: $darkyellow;
+}
+
+.discussion-item+.discussion-item {
+    border-color: $bordercolor;
+}
+
+.discussion-sidebar-item+.discussion-sidebar-item {
+    border-color: $bordercolor;
+}
+
+.discussion-item-icon {
+    color: $color3;
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.discussion-item+.discussion-item-review {
+    border-color: $bordercolor;
+}
+
+.discussion-item-review .file-header {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.discussion-item-review+.discussion-item {
+    border-top: 1px solid $bordercolor;
+}
+
+.discussion-item-review .blob-wrapper {
+    border-color: $bordercolor;
+}
+
+.review-comment-contents::after,
+.review-comment.is-comment-editing::after {
+    background-color: $bordercolor;
+}
+
+.new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
+    background: $bgcolor2;
+}
+
+.new-discussion-timeline .previewable-comment-form .comment-body {
+    border-color: $bordercolor;
+}
+
+.new-discussion-timeline .closed-banner {
+    background: $bordercolor;
+    border-bottom: 18px solid $bgcolor;
+}
+
+.suggester {
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.suggester li {
+    border-color: $bordercolor;
+}
+
+.tabnav {
+    border-color: $bordercolor;
+}
+
+.tabnav-tab.selected {
+    color: $color;
+    border-color: $bordercolor;
+}
+
+.previewable-comment-form textarea {
+    background-color: $bgcolor;
+}
+
+.input-contrast:focus {
+    background: $greyfill2;
+}
+
+.upload-enabled textarea {
+    border-color: $bordercolor;
+}
+
+.drag-and-drop {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.commit-icon .octicon {
+    background-color: $bgcolor;
+}
+
+.issues-listing .table-list-issues .navigation-focus {
+    background-color: $greyfill2;
+}
+
+.branch-action-state-clean .branch-action-body::after {
+    border-right-color: $midgreen;
+}
+
+.branch-action-state-unstable .branch-action-body::after {
+    border-right-color: $greyfill2;
+}
+
+.branch-action-body {
+    background-color: $bgcolor;
+}
+
+.branch-action-body .merge-message,
+.branch-action-body .merge-branch-form {
+    background-color: $bgcolor2;
+    border-top: solid 1px $bordercolor;
+}
+
+.branch-action-state-merged .branch-action-body {
+    border-color: $bordercolor;
+}
+
+.merge-status-list {
+    border-color: $bordercolor;
+}
+
+.merge-status-item {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.branch-group-heading {
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.branch-action-item+.branch-action-item {
+    border-color: $bordercolor;
+}
+
+.status-heading {
+    color: $color2;
+}
+
+
+/* Site | Issue Tab */
+
+.Box-row--focus-gray.navigation-focus {
+    background-color: $bgcolor;
+}
+
+.Box-row:first-of-type {
+    border-color: $bordercolor;
+}
+
+.Box-row {
+    border-color: $bordercolor;
+}
+
+a.Box-row-link.h4.js-navigation-open {
+    color: $darkyellow;
+}
+
+
+/* Code Tab | Branches */
+
+.branch-summary,
+.branch-group-heading+.branch-summary,
+.branch-summary {
+    border-color: $bordercolor;
+}
+
+.branch-a-b-count .meter {
+    background-color: $bgcolor2;
+}
+
+.branch-a-b-count .count-half:last-child {
+    border-color: $bordercolor;
+}
+
+.count-value.count-behind {
+    color: $darkyellow;
+}
+
+.count-value.count-ahead {
+    color: $darkcolor;
+}
+
+a.branch-name {
+    color: inherit;
+}
+
+.table-of-contents li+li {
+    border-color: $bordercolor;
+}
+
+.commit-desc+.commit-branches {
+    border-color: $bordercolor;
+}
+
+
+/* File Changed | Compare | Reviews */
+
+.diffbar {
+    background-color: $bgcolor;
+}
+
+.diff-table tr:not(:last-child) .line-comments {
+    border-color: $bordercolor;
+}
+
+.pr-toolbar {
+    background-color: $bgcolor;
+}
+
+.range-editor {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.compare-pr-placeholder {
+    background-color: $bgcolor;
+    border-color: $greyfill2;
+}
+
+ul.comparison-list {
+    background: $bgcolor;
+    border-color: $bordercolor;
+}
+
+ul.comparison-list>li.title {
+    color: $greyd;
+    background: $bgcolor2;
+}
+
+ul.comparison-list>li {
+    border-color: $bordercolor;
+}
+
+.file-diff-split .empty-cell {
+    background-color: $bgcolor;
+    border-right-color: $bordercolor;
+}
+
+.feature-callout-octicon {
+    border-color: $bordercolor;
+}
+
+.feature-callout {
+    border-color: $bordercolor;
+}
+
+.review-thread {
+    border-color: $bordercolor;
+}
+
+.review-thread-reply {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.review-thread-reply .inline-comment-form {
+    background-color: $bgcolor;
+}
+
+.review-comment .reaction-summary-item:not(.add-reaction-btn) {
+    border-color: $bordercolor;
+}
+
+.last-review-thread {
+    border-color: $bordercolor;
+}
+
+.inline-comment-form {
+    border-color: $bordercolor;
+}
+
+
+/* Release & Tags */
+
+.release-timeline {
+    border-color: $bordercolor;
+    border-width: 1px;
+}
+
+.release-body {
+    border-color: $bordercolor;
+    border-width: 1px;
+}
+
+.releases-tag-list {
+    border-color: $bordercolor;
+}
+
+.releases-tag-list tr {
+    border-color: $bordercolor;
+}
+
+.release-show {
+    border-color: $bordercolor;
+}
+
+.tabnav-extra {
+    padding-right: 15px;
+    color: $greyd;
+}
+
+.tag-info h3 a .tag-name {
+    color: $darkyellow;
+}
+
+.release-downloads {
+    border-color: $bordercolor;
+}
+
+.release-downloads li {
+    border-color: $bordercolor;
+}
+
+
+/* Commits Tab */
+
+.commit-group-title .octicon-git-commit {
+    margin-right: 17px;
+    color: $bordercolor;
+    background: $bgcolor;
+}
+
+.commits-listing::before {
+    background-color: $bordercolor;
+}
+
+
+/* Nav */
+
+.subnav-item {
+    border-color: $bordercolor;
+}
+
+.subnav-item:hover,
+.subnav-item:focus {
+    background-color: $greyfill2;
+}
+
+
+/* Repo Wiki Tab */
+
+.blankslate {
+    background-color: $greyfill2;
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+.wiki-wrapper .wiki-auxiliary-content {
+    background: $bgcolor2;
+}
+
+.wiki-rightbar .boxed-group.collapsed>h3 {
+    border-color: $bordercolor;
+}
+
+.wiki-wrapper .wiki-auxiliary-content-no-bg {
+    background: $bgcolor;
+}
+
+.wiki-wrapper .wiki-custom-sidebar {
+    border-color: $bordercolor;
+}
+
+
+/* Repo Project Tab */
+
+.border {
+    border-color: $bordercolor !important;
+}
+
+.bg-gray {
+    background-color: $bgcolor !important;
+}
+
+.project-header {
+    background-color: $bgcolor;
+}
+
+.project-columns {
+    background-color: $bgcolor;
+}
+
+.bg-white {
+    background-color: $bgcolor2 !important;
+}
+
+.bg-gray-light {
+    background-color: $bgcolor !important;
+}
+
+
+/* Repo Pulse Tab */
+
+.pulse-graph:first-child {
+    border-color: $bordercolor;
+}
+
+.pulse-graph {
+    border-bottom-color: $bordercolor;
+}
+
+.conversation-list-heading .inner {
+    background: $bgcolor;
+}
+
+.conversation-list-heading {
+    border-color: $bordercolor;
+}
+
+.simple-conversation-list>li {
+    border-color: $bordercolor;
+}
+
+.summary-stats li {
+    border-left-color: $bordercolor;
+}
+
+.summary-stats li .num {
+    color: $darkcolor;
+}
+
+.summary-stats li a:hover {
+    background: $greyfill2;
+}
+
+.diffstat-summary strong {
+    color: $darkyellow;
+}
+
+.axis line {
+    stroke: $bordercolor;
+}
+
+.subhead {
+    border: 0;
+}
+
+
+/* Repo Graph | Contributors */
+
+.tint-box {
+    background: $bgcolor;
+}
+
+.capped-card {
+    border-color: $bordercolor;
+}
+
+.capped-card-content {
+    background: $bgcolor;
+}
+
+.graphs .area {
+    fill: $darkyellow;
+}
+
+.capped-card h3 {
+    border-color: $bordercolor;
+}
+
+
+/* Repo Graph | Punch Card */
+
+.day-name {
+    fill: $color3;
+}
+
+circle.day {
+    fill: $darkcolor;
+    stroke-width: 0;
+}
+
+:not(img) text,
+circle.day {
+    fill: $darkcolor;
+}
+
+line.axis {
+    stroke: $bordercolor;
+}
+
+line.axis.even {
+    stroke: $bordercolor;
+}
+
+:not(img) text,
+circle.day {
+    fill: $color3;
+}
+
+
+/* Repo Graph | Traffic */
+
+table.capped-list td {
+    ;
+    border-color: $bordercolor;
+}
+
+table.capped-list th {
+    border-color: $bordercolor;
+}
+
+table.capped-list tr:nth-child(even) {
+    background-color: $bgcolor2;
+}
+
+
+/* Repo Graph | Code Frequency */
+
+.code-frequency .addition {
+    fill: $darkcolor;
+}
+
+.code-frequency .deletion {
+    fill: $darkyellow;
+}
+
+.cadd {
+    font-weight: bold;
+    color: $darkcolor;
+}
+
+.cdel {
+    font-weight: bold;
+    color: $darkyellow;
+}
+
+.graphs .dir {
+    color: $greyd;
+}
+
+
+/* Repo Settings Tab */
+
+.menu {
+    margin-bottom: 15px;
+    list-style: none;
+    background-color: $bgcolor;
+    border: 1px solid $bordercolor;
+    border-radius: 3px;
+}
+
+.menu-item {
+    text-shadow: none;
+    border-bottom: 1px solid $bordercolor;
+}
+
+.menu-item:hover {
+    background-color: $greyfill2;
+}
+
+.menu-item.selected {
+    color: $color;
+    background-color: $greyfill2;
+}
+
+.form-group .form-control {
+    background-color: $greyfill2;
+}
+
+hr,
+.rule {
+    border-bottom: 1px solid $bordercolor;
+}
+
+.boxed-group.dangerzone>h3 {
+    text-shadow: none;
+    border-color: $darkred;
+}
+
+.integrations-callout-standalone .integration-settings-callout {
+    border-color: $bordercolor;
+}
+
+
+/* Profile */
+
+.border-top {
+    border-color: $bordercolor !important;
+}
+
+.profilecols .filter-bar {
+    background-color: $bgcolor;
+}
+
+.pinned-repo-list-item {
+    border-color: $bordercolor;
+}
+
+.pinned-repo-filters {
+    border-color: $bordercolor;
+}
+
+.user-profile-nav {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.border-gray-dark {
+    border-color: $bordercolor !important;
+}
+
+.underline-nav-item.selected {
+    color: $color;
+}
+
+.user-profile-sticky-bar::after {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.underline-nav-item:hover {
+    color: $color2;
+}
+
+.profile-timeline-card-wrapper {
+    border: 0;
+}
+
+.profile-timeline.discussion-timeline::before {
+    left: 11px;
+    background-color: $bordercolor;
+}
+
+.profile-timeline.discussion-timeline .profile-timeline-month-heading::after {
+    background-color: $bordercolor;
+}
+
+.profile-rollup-wrapper+.profile-rollup-wrapper {
+    border-color: $bordercolor;
+}
+
+
+/* Profile | Contribution */
+
+#contributions-calendar rect[fill="$grey4"] {
+    fill: $greyfill2;
+}
+
+
+/* Profile | Repo Tab */
+
+.profilecols .filter-bar .filter-selected {
+    color: $darkcolor;
+}
+
+
+/* Notification */
+
+.list-group-item.navigation-focus {
+    background-color: $greyfill2;
+}
+
+.list-group-item-link {
+    color: $color;
+}
+
+.boxed-group-list>li {
+    border-color: $bordercolor;
+}
+
+.flash {
+    color: $color;
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+
+/* Organisation */
+
+.org-name {
+    color: $color;
+}
+
+.orghead {
+    background-color: $greyfill2;
+    border-color: $bordercolor;
+}
+
+.simple-box {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.org-module-link {
+    color: $darkyellow;
+}
+
+.member-username {
+    color: $darkyellow;
+}
+
+.org-link {
+    color: $darkyellow;
+}
+
+.subnav-bordered {
+    border-color: $bordercolor;
+}
+
+.org-module-title {
+    border-color: $bordercolor;
+}
+
+.member-row {
+    border-color: $bordercolor;
+}
+
+.pagehead-tabs-item.selected {
+    color: $color;
+    background-color: $bgcolor;
+    border-color: $bordercolor2 $bordercolor transparent;
+}
+
+
+/* Create Organisation */
+
+.setup-header {
+    text-shadow: none;
+}
+
+.steps {
+    border-color: $bordercolor;
+}
+
+.steps li {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.steps li.current {
+    color: $greyd;
+    background-color: $bgcolor2;
+}
+
+.setup-info-module {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+.setup-info-module h2 {
+    border-color: $bordercolor;
+}
+
+.plan-choice.open,
+.plan-choice.selected {
+    background-color: $bgcolor;
+}
+
+.plan-choice {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+
+/* Personal Settings (Global) */
+
+.menu-heading {
+    color: $color;
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.listgroup {
+    border-color: $bordercolor;
+}
+
+.listgroup-item+.listgroup-item {
+    border-color: $bordercolor;
+}
+
+.oauth-border {
+    border-color: $bordercolor;
+}
+
+.saved-reply-form {
+    border-color: $bordercolor;
+}
+
+.user-key-badge {
+    border-color: $bordercolor;
+}
+
+dl.new-email-form {
+    border-color: $bordercolor;
+}
+
+.Subhead {
+    border-color: $bordercolor;
+}
+
+
+/* Settings | Security */
+
+li.session-device.session-current,
+li.session-device {
+    background-color: $bgcolor;
+}
+
+.mute,
+.text-gray-dark {
+    color: $color !important;
+}
+
+.boxed-group-list>li:first-child {
+    border-color: $bordercolor;
+}
+
+.boxed-group-inner .help {
+    border-color: $bordercolor;
+}
+
+.auth-form-header {
+    background-color: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+
+/* Settings | Billing */
+
+.billing-section {
+    border-color: $bordercolor;
+}
+
+.billing-section .section-content {
+    color: $greyd;
+}
+
+.radio-label {
+    color: $grey6;
+}
+
+
+/* Modal */
+
+.facebox-popup {
+    background-color: $bgcolor;
+    border: 1px solid $bordercolor;
+}
+
+.facebox-alert {
+    color: $color;
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+}
+
+.facebox-header {
+    border-color: $bordercolor;
+}
+
+.facebox-footer {
+    margin: 0 -15px -15;
+    background: $bgcolor2;
+}
+
+.facebox-footer {
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $bgcolor2;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $bgcolor3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $bgcolor;
+}
+
+
+/* Search Results */
+
+.repo-list-item {
+    border-color: $bordercolor;
+}
+
+.codesearch-results .repo-list-name em,
+.codesearch-results .repo-list-description em {
+    background-color: $bgcolor2;
+}
+
+.participation-graph rect {
+    fill: $bgcolor2;
+}
+
+.code-list .file-box {
+    border-color: $bordercolor;
+}
+
+.code-list .code-list-item+.code-list-item {
+    border-color: $bordercolor;
+}
+
+.code-list .language {
+    color: $greyd;
+}
+
+.codesearch-aside .menu .octicon {
+    color: $color3;
+}
+
+.codesearch-aside .filter-list {
+    border-color: $bordercolor;
+}
+
+.codesearch-aside .filter-list li span.bar {
+    background: $bgcolor2;
+}
+
+.filter-item:hover {
+    background-color: $bgcolor2;
+}
+
+
+/* Helper */
+
+.timeline-commits .hidden-text-expander .ellipsis-expander {
+    color: $color3;
+    background: $bgcolor2;
+}
+
+.hidden-text-expander a,
+.ellipsis-expander {
+    color: $color3;
+    background: $bgcolor2;
+}
+
+
+/* Experimental | Enchancement */
+
+
+/* Blob Minus */
+
+.blob-num-deletion {
+    background-color: $bgcolor3;
+}
+
+.blob-code-deletion {
+    background-color: $bgcolor;
+    text-decoration: line-through;
+    color: $darkcolor;
+}
+
+
+/* Blob Plus */
+
+.blob-num-addition {
+    background-color: $bgcolor3;
+}
+
+.blob-code-addition {
+    background-color: $bgcolor;
+}
+
+
+/* End of Experimental */
+
+
+/* GitHub Gists */
+
+.header-logo-wordmark {
+    color: $color;
+}
+
+.gist-snippet-meta .description {
+    color: $darkcolor;
+}
+
+
+/* Rework Buttons | Icons */
+
+.ajax-pagination-form .ajax-pagination-btn {
+    color: $greyd;
+    background: $bgcolor2;
+    border-color: $bordercolor;
+}
+
+.ajax-pagination-form .ajax-pagination-btn:hover {
+    background-color: $greyfill2;
+}
+
+.btn-outline:disabled,
+.btn-outline:disabled:hover,
+.btn-outline.disabled,
+.btn-outline.disabled:hover {
+    border-color: $bordercolor;
+}
+
+.btn-octicon {
+    color: $color3;
+}
+
+.toolbar-item {
+    color: $color3;
+}
+
+.toolbar-item .menu-target {
+    color: $color3;
+}
+
+.timeline-comment-actions {
+    color: $color3;
+}
+
+.discussion-sidebar-toggle .octicon {
+    color: $color3;
+}
+
+
+/* Github Pricing */
+
+.shade-gradient {
+    background-image: none;
+}
+
+.display-heading-1,
+.display-heading-2,
+.display-heading-3,
+.display-heading-4 {
+    color: $color;
+}
+
+.bg-white {
+    background-color: $bgcolor !important;
+}
+
+.pricing-card {
+    background-color: $bgcolor;
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+.pricing-card-vertical .pricing-card-name {
+    border-color: $bordercolor;
+}
+
+.pricing-card-vertical .pricing-card-cta {
+    border-color: $bordercolor;
+}
+
+
+/* GitHub Explore */
+
+.sort-bar {
+    border-color: $bordercolor;
+}
+
+.pagehead-nav-item {
+    color: $darkyellow;
+}
+
+.pagehead-nav-item:hover {
+    color: $darkcolor;
+}
+
+.pagehead-nav-item.selected {
+    color: $darkcolor;
+    border-color: $bordercolor;
+}
+
+.pagehead.explore-head {
+    border-bottom-color: $bordercolor;
+}
+
+.exploregrid-item-title {
+    color: $color;
+}
+
+.exploregrid-item {
+    color: $darkcolor;
+    border-color: $bordercolor;
+    box-shadow: none;
+}
+
+.thread-subscription-status {
+    background-color: $bgcolor;
+    border: 1px solid $bordercolor;
+}
+
+.explore-section {
+    border-color: $bordercolor;
+}
+
+.explore-section:nth-child(even) {
+    background: $bgcolor2;
+}
+
+.explore-collection h2 {
+    color: $color;
+}
+
+.repo-collection>ul {
+    background: $greyfill2;
+    border-color: $bordercolor;
+}
+
+.showcase-page-header {
+    border-color: $bordercolor;
+}
+
+.showcase-page-repo-list {
+    border-color: $bordercolor;
+}
+
+.showcase-page-pattern::after {
+    background: none $bgcolor;
+}
+
+.intgrs-lstng-item {
+    border-color: $bordercolor;
+}
+
+
+/* GitHub Blog */
+
+.blog-title {
+    color: $color;
+}
+
+
+/* Octotree Addon */
+
+.octotree_github_sidebar {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+.octotree_github_sidebar .octotree_views .octotree_view .octotree_view_header {
+    background-color: $bgcolor;
+    border-bottom: 1px solid $bordercolor;
+    background-image: none;
+}
+
+.octotree_views .octotree_view .octotree_view_header {
+    text-shadow: none;
+}
+
+.octotree_github_sidebar input,
+.octotree_github_sidebar textarea {
+    background-color: $greyfill2;
+    border: 1px solid $bordercolor;
+    padding: 2px;
+    color: $color;
+}
+
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-default .jstree-wholerow-clicked {
+    background-color: $bgcolor2;
+}
+
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-default .jstree-wholerow-hovered {
+    background-color: $bgcolor2;
+}
+
+.octotree_sidebar {
+    border-color: $bordercolor;
+}
+
+.octotree_github_sidebar a.octotree_toggle > span::after,
+.octotree_github_sidebar a.octotree_opts {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+
+/* End */
+}
