@@ -9,6 +9,7 @@ $failed: #db4545;
 $color: #6e6;
 $color2: #0f0;
 $color3: #3a3;
+$codecolor: #f3f;
 $linkcolor: #a3f;
 $bgcolor: black;
 $bordercolor: #515;
@@ -624,12 +625,12 @@ span.d-block {
 
 .markdown-body pre code,
 .markdown-body pre tt {
-    color: $darkcolor;
+    color: $codecolor;
 }
 
 .markdown-body code,
 .markdown-body tt {
-    color: $greyfill2;
+    color: $codecolor;
     background-color: $bgcolor2;
 }
 
@@ -639,11 +640,12 @@ span.d-block {
 }
 
 .blob-code-inner {
-    color: $darkcolor;
+    color: $codecolor;
 }
 
 .blob-code-hunk,
 .blob-code-expandable {
+    color: $codecolor;
     background-color: $bgcolor2;
 }
 
@@ -2182,6 +2184,10 @@ li.session-device {
     filter: invert(1);
 }
 
+.comment-reactions .user-has-reacted {
+    color: $color2;
+    background-color: $bgcolor3;
+}
 
 /* End */
 }
