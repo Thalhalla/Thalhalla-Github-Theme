@@ -21,6 +21,7 @@ $midgreen: #6cc643;
 $bgcolor1: #010001;
 $bgcolor2: #050505;
 $bgcolor3: #190919;
+$bgcolor4: #490949;
 
 $hover: #ddd;
 $darkcolor: #8a8;
@@ -2190,8 +2191,8 @@ li.session-device {
 }
 
 .RecentBranches {
-    color: $color2;
-    background-color: $bgcolor3;
+    color: $linkcolor;
+    background-color: $bgcolor4;
 }
 
 /* End */
