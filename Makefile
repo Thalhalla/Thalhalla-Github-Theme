@@ -2,11 +2,13 @@ SCHWARZ=github-thalhalla
 
 INPUT_SCSS=${SCHWARZ}.scss
 OUTPUT_CSS=${SCHWARZ}.css
+MIN_CSS=${SCHWARZ}.css.min
 
-all: clean vim build clip
+all: clean vim build miniclip
 
 build:
 	sass ${INPUT_SCSS} ${OUTPUT_CSS}
+	minify -o ${MIN_CSS} ${OUTPUT_CSS}
 
 clean:
 	-@rm -f ${OUTPUT_CSS}
@@ -14,6 +16,9 @@ clean:
 
 clip:
 	-@cat ${OUTPUT_CSS}|xclip -i  -selection clipboard
+
+miniclip:
+	-@cat ${MIN_CSS}|xclip -i  -selection clipboard
 
 test:
 	sass -c ${INPUT_SCSS}
