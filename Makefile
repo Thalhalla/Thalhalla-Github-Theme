@@ -3,7 +3,7 @@ SCHWARZ=github-thalhalla
 INPUT_SCSS=${SCHWARZ}.scss
 OUTPUT_CSS=${SCHWARZ}.css
 
-all: clean build clip
+all: clean vim build clip
 
 build:
 	sass ${INPUT_SCSS} ${OUTPUT_CSS}
@@ -17,3 +17,6 @@ clip:
 
 test:
 	sass -c ${INPUT_SCSS}
+
+vim:
+	vim github-thalhalla.scss

@@ -9,6 +9,7 @@ $failed: #db4545;
 $color: #6e6;
 $color2: #0f0;
 $color3: #3a3;
+$color4: #1F1;
 $codecolor: #f3f;
 $linkcolor: #a3f;
 $bgcolor: black;
@@ -151,6 +152,7 @@ h4 {
 
 .header-logo-invertocat {
     color: $color;
+    background-color: $bgcolor;
 }
 
 .header-search-scope {
@@ -2193,6 +2195,34 @@ li.session-device {
 .RecentBranches {
     color: $linkcolor;
     background-color: $bgcolor4;
+}
+
+.code-list .divider .blob-code {
+    color: $color4;
+    background-color: $bgcolor4;
+}
+
+.code-list .divider .blob-num {
+    color: $color4;
+    background-color: $bgcolor4;
+}
+
+.header .header-search-wrapper {
+    color: $color4;
+    background-color: $bgcolor4;
+}
+
+.header .header-search-scope {
+    color: $color4;
+    background-color: $bgcolor4;
+}
+
+*::-moz-placeholder, *::placeholder {
+    color: $color4;
+}
+
+.header .header-search-input::-moz-placeholder, .header .header-search-input::placeholder  {
+    color: $color4;
 }
 
 /* End */
