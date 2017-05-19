@@ -8,7 +8,7 @@ all: clean vim build miniclip
 
 build:
 	sass ${INPUT_SCSS} ${OUTPUT_CSS}
-	minify -o ${MIN_CSS} ${OUTPUT_CSS}
+	minify ${OUTPUT_CSS} > ${MIN_CSS}
 
 clean:
 	-@rm -f ${OUTPUT_CSS}

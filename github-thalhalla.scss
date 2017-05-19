@@ -10,6 +10,8 @@ $color: #6e6;
 $color2: #0f0;
 $color3: #3a3;
 $color4: #1F1;
+$color5: #59A159;
+$color6: #296129;
 $codecolor: #f3f;
 $linkcolor: #a3f;
 $bgcolor: black;
@@ -19,10 +21,15 @@ $darkred: #df2e2e;
 $darkyellow: #00a4a4;
 $midgreen: #6cc643;
 
+
+
 $bgcolor1: #010001;
 $bgcolor2: #050505;
 $bgcolor3: #190919;
-$bgcolor4: #490949;
+$bgcolor4: #290929;
+$bgcolor5: #390939;
+$bgcolor6: #490949;
+$bgcolor7: rgba(27,31,35,0.08);
 
 $hover: #ddd;
 $darkcolor: #8a8;
@@ -45,9 +52,19 @@ $greyfill2: #1a001a;
 
 /* HTML Global */
 
+html {
+    background-color: $bgcolor;
+    color: $color;
+}
+
 body {
     background-color: $bgcolor;
     color: $color;
+}
+
+a {
+    background-color: $bgcolor2;
+    color: $linkcolor;
 }
 
 p {
@@ -2223,6 +2240,83 @@ li.session-device {
 
 .header .header-search-input::-moz-placeholder, .header .header-search-input::placeholder  {
     color: $color4;
+}
+
+.menu-item.selected, .underline-nav-item.selected {
+    color: $color4;
+    background-color: $bgcolor4;
+}
+
+.text-gray {
+	color: $color5 !important;
+}
+
+.text-gray-light {
+	color: $color6 !important;
+}
+
+.underline-nav-item {
+	display: table-cell;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 14px;
+	color: $color5;
+	vertical-align: middle;
+	border-bottom: 2px solid transparent;
+}
+
+.Counter {
+	display: inline-block;
+	padding: 2px 5px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	color: $color6;
+	background-color: $bgcolor7;
+	border-radius: 20px;
+}
+
+a.filter-item {
+	color: $color5;
+	background-color: $bgcolor7;
+	padding: 4px 10px;
+	margin: 0 0 2px;
+	font-size: 12px;
+}
+
+a.filter-item.selected {
+  color: $color4;
+  background-color: $bgcolor4;
+	padding: 4px 10px;
+	margin: 0 0 2px;
+}
+
+table.files td.message a {
+	color: $color5;
+}
+
+table.files td.age {
+	width: 125px;
+	padding-right: 10px;
+	color: $color5;
+	text-align: right;
+	white-space: nowrap;
+}
+
+table.files td .simplified-path {
+	color: $color5;
+}
+
+.branch-infobar {
+	color: $color6;
+}
+
+.numbers-summary .nolink, .numbers-summary a {
+	color: $color6;
+}
+
+.numbers-summary .octicon {
+	color: $color5;
 }
 
 /* End */
