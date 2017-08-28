@@ -62,8 +62,11 @@ body {
     color: $color;
 }
 
-a {
+a:not([aria-hidden='true']) {
     background-color: $bgcolor2;
+}
+
+a {
     color: $linkcolor;
 }
 
@@ -99,6 +102,10 @@ h4 {
     background-image: none;
     background-color: $bgcolor;
 }
+	
+.bg-gray-dark {
+    background-color: $bgcolor;
+}	
 
 .features-list .list-divider,
 .setup-form .tos-info,
@@ -229,6 +236,12 @@ h4 {
     background-color: $bgcolor;
     background-image: none;
     border-color: $bordercolor;
+}
+	
+.btn-primary:disabled,.btn-primary.disabled
+{
+  color: $grey6;
+  background-color: $bgcolor3;
 }
 
 .btn-primary {
@@ -1070,7 +1083,7 @@ timeline-comment::before {
 }
 
 .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
-    background: $bgcolor2;
+    background: $bgcolor2!important;
 }
 
 .new-discussion-timeline .previewable-comment-form .comment-body {
@@ -2237,7 +2250,7 @@ li.session-device {
 }
 
 *::-moz-placeholder, *::placeholder {
-    color: $color4;
+    color: $color4!important;
 }
 
 .header .header-search-input::-moz-placeholder, .header .header-search-input::placeholder  {
