@@ -94,6 +94,60 @@ h4 {
 }
 
 /*.site-header-nav .nav-item {
+  background-color: $bgcolor3;
+  border-color: $bordercolor;
+  border-style: solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-width: 1px;
+  margin: -1px -1px 0;
+  padding: 16px;
+}
+
+.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus {
+	z-index: 2;
+	text-decoration: none;
+	border-color: $codecolor;
+  background-color: $bgcolor6;
+}
+
+.Box-footer {
+	padding: 16px;
+	margin-top: -1px;
+	border-top: 1px solid $bordercolor;
+}
+
+.pagination a, .pagination span, .pagination em {
+  -moz-user-select: none;
+  background: $bgcolor none repeat scroll 0 0;
+  border: 1px solid $bordercolor2;
+  color: $color2;
+  cursor: pointer;
+  float: left;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: -1px;
+  padding: 7px 12px;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pagination .gap, .pagination .disabled, .pagination .gap:hover, .pagination .disabled:hover {
+  background-color: $bgcolor3;
+  color: $color;
+  cursor: default;
+}
+
+
+
+.Box {
+  background-color: $bgcolor3;
+  border: 1px solid $bordercolor;
+  border-radius: 3px;
+}
+
     color: $color;
 }*/
 
